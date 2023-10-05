@@ -1,14 +1,15 @@
 %!TEX program = xelatex
 \documentclass[12pt, a4paper]{report}
 \usepackage[legalpaper, a4paper, margin=2cm]{geometry}
-\usepackage[english]{babel}
+\usepackage[french]{babel}
 \usepackage{hyperref}
 \usepackage{libs/utbmcovers}
 \usepackage{lipsum}
 \usepackage{sectsty}
 \usepackage{csquotes}
 \usepackage[style=ieee]{biblatex}
- 
+\usepackage{fancyhdr}
+
 %----------------------------------------
 % Use Tahoma as base font
 %----------------------------------------
@@ -34,7 +35,7 @@
 %----------------------------------------
 
 \setutbmfrontillustration{assets/images/utbm_default_illustration}
-\setutbmtitle{REPORT TITLE}
+\setutbmtitle{REPORT TITLE 2}
 \setutbmsubtitle{Internship Report ST40 - P2023}
 \setutbmstudent{JACQUES Pierre-Paul}
 \setutbmstudentdepartment{Computer Science Depertment}
@@ -74,39 +75,103 @@
 %----------------------------------------
 
 \begin{document}
-	\tahomafont
+\tahomafont
 
-	\makeutbmfrontcover{}
- 
-	\section*{Abstract}
-	\lipsum[1-3]
-	
-	\newpage
+% \makeutbmfrontcover{}
 
-	\section*{Greetings}
-	\lipsum[1-2] 
+\topmargin -1.5cm
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{
+	\textbf{MR01: Méthodologie de recherche}
+	\\ Proposition argumentée et problématisé d'un sujet
+}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
 
-	\tableofcontents
-	\newpage
+% présentez votre sujet, votre problématique et de son contexte, 
+% justifiez le choix de cette problématique (son intérêt, sa pertinence 
+% d’un point de vue sociétal et/ou scientifique) - document word de 1 à 2
+% pages ; soyez conscient.e que ce premier document va évoluer et 
+% participera par la suite à construire votre introduction 
+% - A finaliser avant le 01/10/2023 22:00
 
-	\chapter{Lorem Ipsum}
-	\section{Section of Lorem Ipsum}
-	\lipsum[1-1]\footnote{Footnote of Lorem Ipsum}
+\chapter*{MR01: Proposition argumentée et problématisé d'un sujet}
+\section*{Sujet: L'accessibilité numérique sur l'image de marque}
 
-	\subsection{Sub Section of Lorem Ipsum}
-	\lipsum[1-1]
+\noindent
+Aborder un tel sujet va permettre de comprendre et d'examiner comment la 
+disponibilité, l'accessibilité et l'expérience utilisateur sur les services et 
+resources numérique d'une entité, affectent la perception qu'on les clients de 
+cette dernière.
+\\\\
+L'accessibilité numérique se réfère à la facilité avec laquelle des individus,
+y compris ceux ayant des besoins spécifiques, peuvent accéder aux informations,
+aux produits ou aux services d'une entité sur internet. Cela passe notamment par
+les interfaces utilisateurs, les applications mobiles, les sites web, les 
+plateformes en ligne, les réseaux sociaux, etc.
+\\\\
+Tout type d'entité peut être concerné par l'accessibilité numérique, que ce soit 
+une entreprise, une organisation à but non lucratif, une institution 
+gouvernementale, etc.
+\\\\
+\noindent
+Ce sujet va permettre une possible réflexion sur les éléments suivants :
+\begin{itemize}
+	\item \textbf{Accessibilité en ligne}: Comment une entité rend-elle ses
+	sites web, applications mobiles et plateformes en ligne accessibles à tous ses 
+	utilisateurs, y compris ceux ayant des handicaps visuels, auditifs ou d'autres
+	besoins spécifiques ?
+	\item \textbf{Expérience utilisateur}: Comment l'accessibilité
+	affecte-t-elle l'expérience globale de l'utilisateur ? Comment l'utilisateur
+	perçoit-il l'entité en fonction de son expérience avec ces services numériques 
+	?
+	\item \textbf{Réputation et responsabilité sociale}: L'engagement envers
+	l'accessibilité numérique peut contribuer à la réputation d'une entité en 
+	tant qu'entité socialement responsable. Comment cela influence-t-il la 
+	perception du public ?
+	\item \textbf{Conformité aux réglementations}: De nombreuses juridictions 
+	exigent désormais de respecter des normes d'accessibilité numérique. Comment 
+	la conformité à ces règles influence-t-elle la réputation d'une entité ?
+	\item \textbf{Innovation et compétitivité}: Les entités qui investissent dans
+	l'accessibilité numérique sont-elles perçues comme étant plus innovantes et
+	compétitives dans un monde de plus en plus numérique ?
+\end{itemize}
 
-	\subsubsection{Sub Sub Section of Lorem Ipsum}
-	\paragraph{title of paragraph}
-	\lipsum[1-1]
+\noindent
+Dans un contexte où les services et ressources numériques sont de plus en plus
+présents dans notre quotidien, il est important de comprendre comment l'accès à
+ces derniers peuvent influencer la perception qu'on les clients d'une entité.
+En effet, l'accessibilité numérique est un enjeu majeur pour toute entité qui 
+souhaite étendre son audience et ses bénéfices.
+\\\\
+Par conséquent la problématique suivante est soulevée : \textbf{Comment
+l'accessibilité numérique influence-t-elle l'image de marque d'une entité ?}
 
-	\paragraph{}
-	\lipsum[1-1]
+% \section*{Greetings}
+% \lipsum[1-2] 
 
-	\newpage
+% \tableofcontents
+% \newpage
 
-	\nocite{*}
-	\printbibliography{}
+% \chapter{Lorem Ipsum}
+% \section{Section of Lorem Ipsum}
+% \lipsum[1-1]\footnote{Footnote of Lorem Ipsum}
 
-	\makeutbmbackcover{}
+% \subsection{Sub Section of Lorem Ipsum}
+% \lipsum[1-1]
+
+% \subsubsection{Sub Sub Section of Lorem Ipsum}
+% \paragraph{title of paragraph}
+% \lipsum[1-1]
+
+% \paragraph{}
+% \lipsum[1-1]
+
+% \newpage
+
+% \nocite{*}
+% \printbibliography{}
+
+% \makeutbmbackcover{}
 \end{document}
