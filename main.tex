@@ -2,7 +2,7 @@
 \documentclass[12pt, a4paper]{report}
 \usepackage[legalpaper, a4paper, margin=2cm]{geometry}
 \usepackage[french]{babel}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{libs/utbmcovers}
 \usepackage{lipsum}
 \usepackage{sectsty}
@@ -20,7 +20,7 @@
 	citestyle=verbose-ibid,
 	abbreviate=false,
 	language=french,
-	datamodel=ISO690UTBM]{biblatex} %ISO 690 Utbm
+	datamodel=ISO690UTBM]{biblatex} % ISO 690 Utbm
 
 \input{biblatex.cfg} % Import biblatex config
 
@@ -107,7 +107,7 @@
 \fancyhf{}
 \fancyhead[L]{
 	\textbf{MR01: Mémoire de Recherche}\\
-	L'ACCESSIBILITÉ NUMÉRIQUE SUR L'IMAGE DE MARQUE
+	L'accessibilité numérique sur l'image de marque
 }
 \fancyhead[R]{A2023\\Julien CONSTANT}
 \fancyfoot[C]{\thepage}
@@ -176,9 +176,9 @@ Pour conclure, l'accessibilité numérique, largement déterminée par l'UI et l
 
 \section{Outils utilisés}
 
-Afin d'approfondir notre compréhension de l'impact de l'accessibilité numérique sur l'image de marque. Divers outils tels ont été utilisés pour analyser la réputation, la visibilité en ligne, et l'accessibilité des entreprises.\\
+Afin d'approfondir notre compréhension de l'impact de l'accessibilité numérique sur l'image de marque. Divers outils ont été utilisés pour analyser la réputation, la visibilité en ligne, et l'accessibilité des entreprises.\\
 
-Cette approche méthodique vise à déterminer comment l'accessibilité numérique influence la perception globale d'une marque en ligne. Les résultats de cette analyse pourront fournir des premiers éléments de réponse à la question centrale de notre recherche.
+Ces outils permettent une approche méthodique qui permet de déterminer comment l'accessibilité numérique influence la perception globale d'une marque. Les résultats de cette analyse pourront fournir des premiers éléments de réponse à la question centrale de notre recherche.
 
 % L'objectif de cette section est de présenter les outils de recherche et d'analyse utilisés dans notre étude pour l'analyse comparative et détaillée des sites web.\\
 
@@ -190,14 +190,36 @@ Cette approche méthodique vise à déterminer comment l'accessibilité numériq
 
 Établit en 2004, The RepTrak Company possède la plus grande base de données de référence sur la réputation au monde, avec plus d'un million d'évaluations d'entreprises par an utilisées par les PDG, les conseils d'administration et les dirigeants dans plus de 60 pays à travers le monde\footcite{noauthor_reptrak_2023}.\\
 
-Par conséquent, on peut considérer que les résultats de ces études annuelles sont fiables et représentatifs de la réalité. Ainsi, le rapport 2023 de Global RepTrak\textsuperscript{\tiny{®}} va permettre de comparer quelles sont les marques les plus appréciées auprès de la population.
+Le processus d'évaluation du Global RepTrak se fait généralement par le biais d'enquêtes auprès d'un échantillon représentatif de la population dans différents pays. Ces enquêtes posent des questions sur divers aspects de la réputation de l'entreprise, tels que la confiance, le respect, l'admiration, la fierté et d'autres dimensions qui contribuent à l'image globale d'une entreprise.\\
 
-\subsection{Semrush}
+La compilation de ces évaluations donne lieu à un indice de réputation, le Global RepTrak, qui permet de classer les entreprises en fonction de leur réputation perçue. Les résultats peuvent être utilisés par les entreprises pour évaluer l'efficacité de leurs efforts de communication, de responsabilité sociale et d'autres initiatives visant à renforcer leur réputation.\\
 
-e\footcite{noauthor_most_nodate}
+Par conséquent, on peut considérer que les résultats de ces études annuelles sont fiables et réaliste. Ainsi, le rapport 2023 de Global RepTrak\textsuperscript{\tiny{®}} va permettre de comparer quelles sont les marques les plus appréciées auprès de la population.
 
+\subsection{SEMrush}
+
+SEMrush est une suite d'outils de marketing en ligne utilisée par les professionnels du référencement, du marketing numérique et de la recherche concurrentielle\footcite{noauthor_semrush_2023}. Il offre des fonctionnalités telles que l'analyse de la concurrence, le suivi des classements, la recherche de mots-clés, l'audit SEO, et la gestion de la publicité en ligne.\\
+
+Par conséquent, il fournit des informations détaillées sur les performances des sites web, permettant aux utilisateurs de prendre des décisions éclairées pour améliorer leur présence en ligne. Il est largement utilisé pour optimiser les campagnes publicitaires, améliorer le référencement organique et comprendre les tendances du marché numérique.
 
 \subsection{Google Lighthouse}
+
+Google Lighthouse est une suite d'outils open source développée par Google pour aider les développeurs à améliorer la qualité de leurs pages web\footcite{noauthor_google_2023}. Elle est principalement utilisée pour l'audit et l'optimisation des performances, de l'accessibilité, de l'expérience utilisateur et de l'optimisation des moteurs de recherche.\\
+
+Grâce à ces outils, on peut relever une note entre 0 et 100 sur les critères suivants:
+\begin{enumerate}
+    \item \textbf{Performance :} Évaluation de la performance en mesurant des indicateurs tels que le temps de chargement, le rendu initial, et d'autres métriques liées à la vitesse.
+    
+    \item \textbf{Accessibilité :} Analyse de la conformité de la page aux bonnes pratiques d'accessibilité, en identifiant les problèmes potentiels qui pourraient entraver l'expérience utilisateur pour les personnes ayant des limitations physiques.
+    
+    \item \textbf{SEO :} Analyse de la page pour des éléments liés à l'optimisation pour les moteurs de recherche, tels que les balises méta, les balises de titre, la structure des données, etc.
+    
+    \item \textbf{Bonnes Pratiques :} Lighthouse peut également fournir des conseils généraux sur les bonnes pratiques de développement web, encourageant l'utilisation de techniques modernes et de standards du web.
+\end{enumerate}
+
+Les utilisateurs peuvent exécuter Lighthouse via l'extension de navigateur Google Chrome, la ligne de commande, ou même en intégrant les audits Lighthouse dans leurs flux de travail de développement via des outils tels que Google DevTools.\\
+
+L'utilisation de Google Lighthouse est une pratique courante pour les développeurs web et les professionnels du marketing afin d'optimiser les performances et l'expérience utilisateur de leurs sites web. Cela contribue également à garantir que les pages sont conformes aux normes modernes du web et aux meilleures pratiques de développement.
 
 % L'objectif de cette section est de comparer les marques les plus appréciées avec celles dont les sites web sont les plus consultés. Nous examinerons s'il s'agit du même groupe de marques.\\
 
@@ -206,7 +228,13 @@ e\footcite{noauthor_most_nodate}
 % \underline{Conclusions intermédiaires :} À la fin de cette section, nous aurons identifié si une corrélation existe entre la réputation des marques et leur accessibilité numérique, en soulignant le sens de cette relation.\\
 
 \section{Les marques les plus appréciées}
+
+Selon le rapport 2023 (données relevées de décembre 2022 à janvier 2023), voici les 100 marques les plus appréciées au monde:
+
+
+
 \section{Les sites les plus consultées}
+
 
 
 \chapter{Analyse détaillée}
