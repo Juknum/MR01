@@ -72,8 +72,6 @@
 %-----
 % Default texts and images not related to the student or the company
 \newcommand{\@defaultutbmschoolname}{\iflanguage{french}{{\bfseries UNIVERSITÉ DE TECHNOLOGIE} DE BELFORT-MONTBÉLIARD}{{\bfseries UNIVERSITY OF TECHNOLOGY} OF BELFORT-MONTBÉLIARD}}
-\newcommand{\@defaultutbmcompanytutortext}{\iflanguage{french}{Tuteur en entreprise}{Company tutor}}
-\newcommand{\@defaultutbmschooltutortext}{\iflanguage{french}{Suiveur UTBM}{UTBM tutor}}
 \newcommand{\@defaultutbmkeywordstext}{\iflanguage{french}{Mots clefs}{Keywords}}
 \newcommand{\@defaultutbmabstracttext}{\iflanguage{french}{Résumé}{Abstract}}
 \newcommand{\@defaultutbmschoollogo}{assets/images/utbm_logo}
@@ -87,10 +85,6 @@
 \newcommand{\@defaultutbmstudentdepartment}{\iflanguage{french}{Département}{Department}}
 \newcommand{\@defaultutbmstudentpathway}{\iflanguage{french}{Filière}{Pathway}}
 \newcommand{\@defaultutbmcompany}{\iflanguage{french}{Entreprise}{Company}}
-\newcommand{\@defaultutbmcompanyaddress}{\iflanguage{french}{Adresse}{Address}}
-\newcommand{\@defaultutbmcompanywebsite}{\iflanguage{french}{Site web}{Website}}
-\newcommand{\@defaultutbmcompanytutor}{\iflanguage{french}{Nom tuteur en entreprise}{Company tutor name}}
-\newcommand{\@defaultutbmschooltutor}{\iflanguage{french}{Nom suiveur UTBM}{UTBM tutor name}}
 \newcommand{\@defaultutbmkeywords}{\iflanguage{french}{Liste de mots clefs}{List of keywords}}
 \newcommand{\@defaultutbmabstract}{\iflanguage{french}{Texte du résumé}{Abstract text}}
 
@@ -105,18 +99,6 @@
 % \setutbmschoolname{name}
 \newcommand{\setutbmschoolname}[1]{\renewcommand{\@utbmschoolname}{#1}}
 \newcommand{\@utbmschoolname}{\@defaultutbmschoolname}
-
-%-----
-% Set the text for the company tutor
-% \setutbmcompanytutortext{text}
-\newcommand{\setutbmcompanytutortext}[1]{\renewcommand{\@utbmcompanytutortext}{#1}}
-\newcommand{\@utbmcompanytutortext}{\@defaultutbmcompanytutortext}
-
-%-----
-% Set the text for the school tutor
-% \setutbmschooltutortext{text}
-\newcommand{\setutbmschooltutortext}[1]{\renewcommand{\@utbmschooltutortext}{#1}}
-\newcommand{\@utbmschooltutortext}{\@defaultutbmschooltutortext}
 
 %-----
 % Set the text for the keywords
@@ -186,34 +168,10 @@
 \newcommand{\@utbmcompany}{\@defaultutbmcompany}
 
 %-----
-% Set the company address
-% \setutbmcompanyaddress{address}
-\newcommand{\setutbmcompanyaddress}[1]{\renewcommand{\@utbmcompanyaddress}{#1}}
-\newcommand{\@utbmcompanyaddress}{\@defaultutbmcompanyaddress}
-
-%-----
-% Set the company website
-% \setutbmcompanywebsite{website}
-\newcommand{\setutbmcompanywebsite}[1]{\renewcommand{\@utbmcompanywebsite}{#1}}
-\newcommand{\@utbmcompanywebsite}{\@defaultutbmcompanywebsite}
-
-%-----
 % Set the company logo
 % \setutbmcompanylogo{filename}
 \newcommand{\setutbmcompanylogo}[1]{\renewcommand{\@utbmcompanylogo}{#1}}
 \newcommand{\@utbmcompanylogo}{\@defaultutbmcompanylogo}
-
-%-----
-% Set the company tutor
-% \setutbmcompanytutor{tutor}
-\newcommand{\setutbmcompanytutor}[1]{\renewcommand{\@utbmcompanytutor}{#1}}
-\newcommand{\@utbmcompanytutor}{\@defaultutbmcompanytutor}
-
-%-----
-% Set the school tutor
-% \setutbmschooltutor{tutor}
-\newcommand{\setutbmschooltutor}[1]{\renewcommand{\@utbmschooltutor}{#1}}
-\newcommand{\@utbmschooltutor}{\@defaultutbmschooltutor}
 
 %-----
 % Set the keywords
@@ -345,30 +303,7 @@
 			minimum height=0.8cm,
 		]
 		(company) at (subtitle.south)
-		{\tahomafont\bfseries {\fontsize{20}{24}\selectfont \@utbmcompany}\\
-		{\fontsize{12}{14}\selectfont\color{utbm_cover_main_shadow_text} \@utbmcompanyaddress\\
-		\url{\@utbmcompanywebsite}}};
-
-		\node[
-			yshift=-10.8cm,
-			utbm text,
-			text=utbm_cover_main_text,
-			minimum height=0.8cm,
-		]
-		(company_tutor) at (subtitle.south)
-		{\tahomafont {\fontsize{12}{14}\selectfont\color{utbm_cover_main_shadow_text} \@utbmcompanytutortext}\\
-		\vspace*{0.7mm}{\fontsize{14}{17}\selectfont\bfseries \@utbmcompanytutor}};
-
-		\node[
-			yshift=-10.8cm,
-			utbm text,
-			align=right,
-			text=utbm_cover_main_text,
-			minimum height=0.8cm,
-		]
-		(school_tutor) at (subtitle.south)
-		{\tahomafont {\fontsize{12}{14}\selectfont\color{utbm_cover_main_shadow_text} \@utbmschooltutortext}\\
-		\vspace*{0.7mm}{\fontsize{14}{17}\selectfont\bfseries \@utbmschooltutor}};
+		{\tahomafont\bfseries {\fontsize{20}{24}\selectfont \@utbmcompany}};
 
 		\node[
 			yshift=0.7cm,
@@ -497,18 +432,6 @@
 		{\tahomafont\fontsize{12}{14}\selectfont {\bfseries \@utbmabstracttext}\\
 		\hfil\\
 		\@utbmabstract};
-
-		\node[
-			yshift=0.5cm,
-			utbm text,
-			text=utbm_cover_main_text,
-			anchor=south,
-			minimum height=0.8cm,
-		]
-		(company) at (information.south)
-		{\tahomafont\bfseries {\fontsize{20}{24}\selectfont \@utbmcompany}\\
-		{\fontsize{12}{14}\selectfont\color{utbm_cover_main_shadow_text} \@utbmcompanyaddress\\
-		\url{\@utbmcompanywebsite}}};
 
 		\node[
 			yshift=0.7cm,
