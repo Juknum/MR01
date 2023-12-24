@@ -14,6 +14,7 @@
 \usepackage{enumitem}
 \usepackage{pifont}
 \usepackage{soul}
+\usepackage{float}
 
 \usepackage[backend=biber,
 	style=authortitle,
@@ -67,13 +68,6 @@
 \setutbmstudentpathway{SEE à Linköpings Universitet - Suède}
 \setutbmcompanylogo{assets/images/linkopings_universitet.jpeg}
 \setutbmcompany{\underline{L'accessibilité numérique sur l'image de marque}}
-\setutbmkeywords{
-	[N°X – Y] Keyword 1,
-	[N°X – Y] Keyword 2,
-	[N°X – Y] Keyword 3,
-	[N°X – Y] Keyword 4,
-}
-\setutbmabstract{ \lipsum[1-2] }
 
 %----------------------------------------
 % Document configuration
@@ -124,12 +118,6 @@ Un grand merci également à l'Université de Technologie de Belfort-Montbéliar
 
 \chapter{Introduction}
 
-% L'objectif de cette section est de poser le contexte de l'étude en mettant en évidence la question centrale : quelle est la relation entre l'accessibilité numérique et la réputation d'une marque ? Nous définirons également les objectifs de la recherche.\\
-
-% \underline{Contenu :} Nous allons introduire le concept d'accessibilité numérique et son importance croissante dans l'ère digitale. Ensuite, nous présenterons la question de recherche et les deux principales pistes de réflexion : la corrélation entre les marques appréciées et celles dont les sites web sont les plus consultés.\\
-
-% \underline{Conclusions intermédiaires :} À la fin de cette section, nous aurons posé les bases de notre étude en soulignant l'importance de comprendre la relation entre l'accessibilité numérique et la réputation d'une marque.\\
-
 \section{Contexte}
 
 Dans une ère de plus en plus numérique\footcite{noauthor_ere_2023}, les entreprises sont de plus en plus nombreuses à se tourner vers le web\footcite{noauthor_total_nodate} afin de promouvoir leurs produits et services. En effet, pour faire davantage de profits, il paraît logique de vouloir toucher davantage de consommateurs et le web est un moyen efficace d'y parvenir.\\
@@ -142,7 +130,7 @@ L'accessibilité numérique se réfère à la conception et au développement de
 
 Cela englobe une gamme variée de considérations, telles que la mise en œuvre de techniques de conception universelle, l'utilisation de normes et de bonnes pratiques, et l'intégration de fonctionnalités\footcite{alajarmeh_non-visual_2021} facilitant l'accès pour tous les utilisateurs. Certains éléments clés de l'accessibilité numérique comprennent la compatibilité avec les technologies d'assistance (comme les lecteurs d'écran pour les personnes malvoyantes), la facilité de navigation au clavier pour les personnes ayant des difficultés motrices, la lisibilité des contenus pour les personnes atteintes de troubles cognitifs, et la fourniture d'alternatives pour les contenus multimédias tels que les sous-titres pour les vidéos.\\
 
-L'accessibilité numérique ne se limite pas seulement à des considérations éthiques, mais elle est également souvent exigée par la législation dans de nombreux pays\footcite{noauthor_accessibilite_nodate}. Par exemple, des normes d'accessibilité telles que les Web Content Accessibility Guidelines\footcite{noauthor_criteres_nodate} (WCAG) sont largement utilisées comme référence pour garantir que les sites web et les applications respectent des critères d'accessibilité spécifiques.\\
+L'accessibilité numérique ne se limite pas seulement à des considérations éthiques, mais elle est également souvent exigée par la législation dans de nombreux pays\footcite{noauthor_accessibilite_nodate}. Par exemple, des normes d'accessibilité telles que les Web Content Accessibility Guidelines\footcite{noauthor_criteres_nodate} (WCAG) sont largement utilisées comme référence pour garantir que les sites web et les applications respectent des critères d'accessibilité spécifiques\footcite{filipe_why_2023}.\\
 
 En promouvant l'accessibilité numérique, les entreprises s'efforcent ainsi de réduire les barrières qui limitent l'accès à leurs produits et services. Cela permet d'élargir leur portée et d'atteindre un public plus large, tout en améliorant l'expérience utilisateur et par conséquent la satisfaction client. En outre, l'accessibilité numérique peut également contribuer à améliorer l'image de marque d'une entreprise en montrant son engagement à fournir des produits et services accessibles à tous.\\
 
@@ -172,7 +160,7 @@ L'accessibilité numérique est également cruciale pour inclure tous les utilis
 
 Pour conclure, l'accessibilité numérique, largement déterminée par l'UI et l'UX, a un impact direct sur la manière dont une marque est perçue en ligne. En investissant dans une expérience utilisateur positive et accessible, les marques peuvent renforcer leur réputation, fidéliser les clients et s'établir comme des acteurs respectés dans leur domaine.
 
-\chapter{Analyse comparative}
+\chapter{Analyse}
 
 \section{Outils utilisés}
 
@@ -180,17 +168,11 @@ Afin d'approfondir notre compréhension de l'impact de l'accessibilité numériq
 
 Ces outils permettent une approche méthodique qui permet de déterminer comment l'accessibilité numérique influence la perception globale d'une marque. Les résultats de cette analyse pourront fournir des premiers éléments de réponse à la question centrale de notre recherche.
 
-% L'objectif de cette section est de présenter les outils de recherche et d'analyse utilisés dans notre étude pour l'analyse comparative et détaillée des sites web.\\
-
-% \underline{Contenu :} Nous introduirons les méthodologies et les critères utilisés pour évaluer l'accessibilité numérique des sites web. Cela comprendra une présentation des outils de mesure, des indicateurs clés, et des normes d'accessibilité utilisées dans notre analyse.\\
-
-% \underline{Conclusions intermédiaires :} À la fin de cette section, nous aurons établi la méthodologie sous-jacente à notre étude, renforçant ainsi la rigueur de nos résultats.
-
 \subsection{Global RepTrak\textsuperscript{\tiny{®}} 2023}
 
 Établit en 2004, The RepTrak Company possède la plus grande base de données de référence sur la réputation au monde, avec plus d'un million d'évaluations d'entreprises par an utilisées par les PDG, les conseils d'administration et les dirigeants dans plus de 60 pays à travers le monde\footcite{noauthor_reptrak_2023}.\\
 
-Le processus d'évaluation du Global RepTrak se fait généralement par le biais d'enquêtes auprès d'un échantillon représentatif de la population dans différents pays. Ces enquêtes posent des questions sur divers aspects de la réputation de l'entreprise, tels que la confiance, le respect, l'admiration, la fierté et d'autres dimensions qui contribuent à l'image globale d'une entreprise.\\
+Le processus d'évaluation du Global RepTrak se fait généralement par le biais d'enquêtes auprès d'un échantillon représentatif de la population dans différents pays\footcite{noauthor_2023_2023}. Ces enquêtes posent des questions sur divers aspects de la réputation de l'entreprise, tels que la confiance, le respect, l'admiration, la fierté et d'autres dimensions qui contribuent à l'image globale d'une entreprise.\\
 
 La compilation de ces évaluations donne lieu à un indice de réputation, le Global RepTrak, qui permet de classer les entreprises en fonction de leur réputation perçue. Les résultats peuvent être utilisés par les entreprises pour évaluer l'efficacité de leurs efforts de communication, de responsabilité sociale et d'autres initiatives visant à renforcer leur réputation.\\
 
@@ -221,16 +203,10 @@ Les utilisateurs peuvent exécuter Lighthouse via l'extension de navigateur Goog
 
 L'utilisation de Google Lighthouse est une pratique courante pour les développeurs web et les professionnels du marketing afin d'optimiser les performances et l'expérience utilisateur de leurs sites web. Cela contribue également à garantir que les pages sont conformes aux normes modernes du web et aux meilleures pratiques de développement.
 
-% L'objectif de cette section est de comparer les marques les plus appréciées avec celles dont les sites web sont les plus consultés. Nous examinerons s'il s'agit du même groupe de marques.\\
-
-% \underline{Contenu :} Nous effectuerons une analyse comparative entre les marques les plus appréciées et les marques les plus consultées en ligne. Si elles se chevauchent, nous explorerons les deux possibilités : la réputation influence-t-elle l'accessibilité numérique ou vice versa ?\\
-
-% \underline{Conclusions intermédiaires :} À la fin de cette section, nous aurons identifié si une corrélation existe entre la réputation des marques et leur accessibilité numérique, en soulignant le sens de cette relation.\\
-
 \newpage
 \section{Les marques les plus appréciées}
 
-Selon le rapport 2023 (données relevées de décembre 2022 à janvier 2023), voici les 100 marques les plus appréciées au monde:
+Selon le rapport 2023 de Global RepTrak\textsuperscript{\tiny{®}} (données relevées de décembre 2022 à janvier 2023), voici les 100 marques les plus appréciées au monde:
 
 \begin{center}
     \includegraphics[scale=.85]{assets/images/reptrak-top-100.png}
@@ -238,31 +214,52 @@ Selon le rapport 2023 (données relevées de décembre 2022 à janvier 2023), vo
 
 \section{Les sites les plus consultées}
 
+Selon SEMrush, les 20 sites internet plus consultés en novembre 2023 sont les suivants:
 
+\begin{center}
+    \includegraphics[scale=.85]{assets/images/semrush-top-20.png}
+\end{center}
 
-\chapter{Analyse détaillée}
+\chapter{Résultats}
 
-% L'objectif de cette section est d'analyser en détail les sites web des marques les plus appréciées et les plus consultées pour évaluer leur accessibilité.\\
+\section{Deux groupes différents}
 
-% \underline{Contenu :} Nous examinerons la conception et les fonctionnalités des sites web des marques les plus appréciées et les plus consultées afin de déterminer si elles sont accessibles à tous. Cela nous permettra de déduire si l'appréciation d'une marque (sa réputation) découle de son accessibilité numérique.\\
+Hélas, les données relevées par SEMrush et le rapport 2023 de Global RepTrak\textsuperscript{\tiny{®}} ne permettent pas d'identifier clairement de causalité entre l'appréciation d'une marque et sa fréquentation internet.\\
 
-% \underline{Conclusions intermédiaires :} À la fin de cette section, nous aurons établi si l'accessibilité numérique contribue à l'appréciation d'une marque, en mettant en évidence des exemples concrets de sites web analysés.\\
+En effet, d'un côté, les données trop précises de SEMrush, axées sur les performances en ligne, peuvent ne pas refléter la perception globale de la marque. De l'autre côté, les données plus générales de RepTrak, axées sur la réputation globale, pourraient ne pas capturer les détails cruciaux de la performance en ligne. Une approche intégrée, combinant les données granulaires de SEMrush et la perspective exhaustive de RepTrak, pourrait offrir une compréhension plus complète de l'impact global d'une marque.\\
 
-\newpage
-\chapter{Conclusion}
+Malgré l'impossibilité de déterminer avec les données précédentes la corrélation entre l'appréciation d'une marque et sa fréquentation internet, une observation intéressante émerge grâce Google Lighthouse. Une analyse approfondie révèle que l'ensemble des marques les plus appréciées affichent une accessibilité élevée (sur leur site web principal), avec une moyenne d'environ $85\%$ (\ref{tab:table_avg}).\\
 
-% L'objectif de cette section est de tirer des conclusions sur la relation entre l'accessibilité numérique et la réputation d'une marque, basées sur les analyses réalisées.\\
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Performance & Accessibilité & SEO & Bonnes Pratiques & Moyenne Générale\\
+        \hline
+        $36.3\%$ & $86.45\%$ & $87.08\%$ & $85.77\%$ & $73.84\%$ \\
+        \hline
+    \end{tabular}
+    \caption{Moyenne pour chaque catégorie d'évaluation Google Lighthouse pour les 100 marques les plus appréciées}
+    \label{tab:table_avg}
+\end{table}
 
-% \underline{Contenu :} Nous synthétiserons les résultats obtenus dans les sections précédentes pour répondre à la question centrale. Nous discuterons des implications de notre étude et proposerons des recommandations pour les entreprises afin d'améliorer leur réputation par le biais de l'accessibilité numérique.\\
+Cependant, il est essentiel d'explorer d'autres aspects de la performance en ligne. En se penchant sur l'optimisation des moteurs de recherche (SEO), les données révèlent une moyenne élevée de 87.08\%. Cela suggère que les marques les plus appréciées mettent en œuvre des stratégies solides pour améliorer leur visibilité dans les résultats de recherche, renforçant ainsi leur présence en ligne.\\
 
-% \underline{Conclusions finales :} À la fin de ce rapport, nous aurons apporté des éclaircissements sur la relation entre l'accessibilité numérique et la réputation des marques, offrant ainsi des perspectives importantes pour les acteurs du marché.\\
+Par ailleurs, les bonnes pratiques en matière de développement web jouent également un rôle significatif, avec une moyenne de 85.77\%. Cette catégorie évalue la conformité aux normes et aux directives recommandées pour assurer une expérience utilisateur optimale. Les marques qui excellent dans ces domaines démontrent leur engagement envers la qualité et la satisfaction du visiteur.\\
+
+Notons cependant que la note de performance moyenne est relativement basse, à 36.30\%. La mention "Values are estimated and may vary. The performance score is calculated directly from these metrics. See calculator." dans Lighthouse indique que ces scores peuvent être influencés par des estimations et des variations, soulignant ainsi la complexité de la mesure des performances en ligne.\\
+
+Cette constatation suggère que, bien que la relation entre réputation en ligne et appréciation globale demeure complexe, l'accessibilité robuste des sites web semble jouer un rôle crucial dans la construction d'une image positive. Cette cohérence souligne l'importance de l'accessibilité pour les marques cherchant à renforcer leur présence en ligne et à favoriser des expériences utilisateur inclusives.
+
+\section{Conclusion}
+
+Pour conclure, l'examen croisé des données de SEMrush, Global RepTrak\textsuperscript{\tiny{®}}, et Google Lighthouse offre des perspectives riches mais complexes sur la relation entre l'appréciation d'une marque et sa fréquentation internet. Alors que SEMrush met en lumière les performances en ligne, RepTrak offre une vue exhaustive de la réputation. Cependant, c'est Google Lighthouse qui révèle une constante notable : les marques les plus appréciées maintiennent une accessibilité exceptionnelle sur leurs sites web, soulignant son rôle crucial dans la perception positive.\\
+
+L'analyse détaillée des catégories de Lighthouse révèle des moyennes élevées pour l'accessibilité, le SEO, et les bonnes pratiques, mais une note de performance relativement basse, accentuée par la mention d'estimations. Ces résultats soulignent l'importance de considérer la qualité de l'expérience utilisateur, la visibilité dans les résultats de recherche, et le respect des normes web.\\
+
+Il devient clair que la gestion de la réputation en ligne nécessite une approche équilibrée, intégrant des métriques quantitatives et qualitatives pour une compréhension complète de l'impact global d'une marque dans le monde numérique. En fin de compte, cette approche intégrée offre des pistes précieuses pour les entreprises cherchant à renforcer leur présence en ligne tout en cultivant une image positive et inclusive.
 
 \nocite{*}
 \printbibliography[heading=bibintoc,title=Bibliographie]
 
-% L'objectif de cette section est de répertorier les sources utilisées pour étayer notre recherche. À la fin de ce rapport, la bibliographie servira de référence pour les lecteurs intéressés à approfondir le sujet et soulignera la rigueur académique de notre démarche.\\
-
-% \underline{Contenu :} Nous présenterons une liste complète des ouvrages, articles, et ressources en ligne consultés dans le cadre de notre étude. Cela renforcera la crédibilité de nos conclusions en montrant que notre travail s'appuie sur une base solide de connaissances existantes.\\
-
-\makeutbmbackcover{}
 \end{document}
